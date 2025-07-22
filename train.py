@@ -13,9 +13,9 @@ from datasets import load_dataset
 from peft import get_peft_model, LoraConfig, TaskType
 
 # ===== 1. Set paths =====
-model_path = "/data/zcx/modelscope_models/models/LLM-Research/Meta-Llama-3-8B-Instruct"
-classification_data_path = "/data/zcx/llama3_finetune/data/classification_data.jsonl"
-generation_data_path = "/data/zcx/llama3_finetune/data/generation_data.jsonl"
+model_path = "/data/modelscope_models/models/LLM-Research/Meta-Llama-3-8B-Instruct"
+classification_data_path = "/data/llama3_finetune/data/classification_data.jsonl"
+generation_data_path = "/data/llama3_finetune/data/generation_data.jsonl"
 
 # ===== 2. Set environment variables =====
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
